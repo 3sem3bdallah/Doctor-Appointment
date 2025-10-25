@@ -18,7 +18,7 @@ class GetStartedButton extends StatelessWidget {
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
       ),
-      child: Text('Get Started', style: TextStyles.font16WhiteSemoBold),
+      child: Text('Get Started', style: TextStyles.font16WhiteMedium),
       onPressed: () {
         context.pushNamed(Routes.loginScreen);
       },
