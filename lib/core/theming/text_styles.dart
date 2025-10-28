@@ -16,12 +16,17 @@ class TextStyles {
     color: AppColors.mainBlue,
   );
 
-    static TextStyle font13BlueMedium = TextStyle(
-    fontSize: 13.sp,
+  static TextStyle font14BlueMedium = TextStyle(
+    fontSize: 14.sp,
     fontWeight: FontWeightHelper.medium,
     color: AppColors.mainBlue,
   );
 
+  static TextStyle font13BlueMedium = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.mainBlue,
+  );
 
   static TextStyle font13BlueRegular = TextStyle(
     fontSize: 13.sp,
@@ -56,13 +61,19 @@ class TextStyles {
   static TextStyle font14DarkBlueMedium = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.medium,
-    color: AppColors.darkblue,
+    color: AppColors.darkBlue,
   );
 
-    static TextStyle font13DarkBlueRegular = TextStyle(
+    static TextStyle font15DarkBlueMedium = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.darkBlue,
+  );
+
+  static TextStyle font13DarkBlueRegular = TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.regular,
-    color: AppColors.darkblue,
+    color: AppColors.darkBlue,
   );
 
   static TextStyle font16WhiteMedium = TextStyle(
