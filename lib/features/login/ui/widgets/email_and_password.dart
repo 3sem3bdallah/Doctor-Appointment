@@ -60,7 +60,6 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
               }
             },
             controller: context.read<LoginCubit>().emailController,
-            isObscureText: isObscureText,
           ),
           verticalSpace(18),
           AppTextFormField(
