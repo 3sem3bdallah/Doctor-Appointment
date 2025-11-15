@@ -11,14 +11,14 @@ jobs:
     steps:
     - name: Checkout my repo code
       uses: actions/checkout@v4
-    
+
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
         java-version: '21'
         distribution: 'temurin'
         cache: 'gradle'
-    
+
     - name: Install Flutter
       uses: subosito/flutter-action@v2
       with:
@@ -30,11 +30,15 @@ jobs:
         ruby-version: "3.2.3"
         bundler-cache: true
         working-directory: android
-        
+
+    - name: Verify Fastlane
+      run: |
+        bundle exec fastlane --version
+      working-directory: android
+
     - name: Build and Distribute App
       env:
         FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
       run: |
         bundle exec fastlane android firebase_upload
       working-directory: android
-
