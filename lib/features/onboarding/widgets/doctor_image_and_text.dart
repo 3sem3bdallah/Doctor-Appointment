@@ -16,6 +16,7 @@ class DoctorImageAndText extends StatelessWidget {
             gradient: LinearGradient(
               colors: [
                 Colors.white,
+                // ignore: deprecated_member_use
                 Colors.white.withOpacity(0.0),
               ],
               begin: Alignment.bottomCenter,

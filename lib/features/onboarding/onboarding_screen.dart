@@ -1,8 +1,8 @@
 import 'package:adv_app/core/helpers/spacing.dart';
 import 'package:adv_app/core/theming/text_styles.dart';
+import 'package:adv_app/features/onboarding/get_started_button.dart';
 import 'package:adv_app/features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:adv_app/features/onboarding/widgets/doctor_image_and_text.dart';
-import 'package:adv_app/features/onboarding/widgets/get_started_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
