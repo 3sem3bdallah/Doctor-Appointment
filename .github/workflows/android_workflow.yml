@@ -27,9 +27,15 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: "3.2.3"
+        ruby-version: "3.1.0"
         bundler-cache: true
         working-directory: android
+
+    - name: Install Bundler and Dependencies
+      run: |
+        gem install bundler
+        bundle install
+      working-directory: android
 
     - name: Verify Fastlane
       run: |
@@ -39,6 +45,7 @@ jobs:
     - name: Build and Distribute App
       env:
         FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
+        PATH: ${{ github.workspace }}/android/vendor/bundle/ruby/3.2.0/bin:$PATH
       run: |
         bundle exec fastlane android firebase_upload
       working-directory: android
