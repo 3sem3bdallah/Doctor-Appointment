@@ -1,9 +1,10 @@
-import 'package:adv_app/core/networking/api_result.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:adv_app/features/signup/logic/sign_up_state.dart';
-import 'package:adv_app/features/signup/data/repo/sign_up_repo.dart';
+
+import '../../../core/networking/api_result.dart';
 import '../data/models/sign_up_request_body.dart';
+import '../data/repo/sign_up_repo.dart';
+import 'sign_up_state.dart';
 
 class SignupCubit extends Cubit<SignupState> {
   final SignUpRepo _signupRepo;

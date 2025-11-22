@@ -1,11 +1,12 @@
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:adv_app/features/login/logic/cubit/login_cubit.dart';
-import 'package:adv_app/features/login/logic/cubit/login_state.dart';
+
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/reouting/routes.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/theming/text_styles.dart';
+import '../../logic/cubit/login_cubit.dart';
+import '../../logic/cubit/login_state.dart';
 
 class LoginBlocListener extends StatelessWidget {
   const LoginBlocListener({super.key});
@@ -27,7 +28,7 @@ class LoginBlocListener extends StatelessWidget {
           },
           success: (loginResponse) {
             context.pop();
-            context.pushNamed(Routes.homeScreen);
+            context.pushReplacementNamed(Routes.homeScreen);
           },
           error: (error) {
             context.pop();

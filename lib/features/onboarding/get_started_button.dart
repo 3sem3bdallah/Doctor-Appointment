@@ -1,7 +1,7 @@
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
+import '../../core/helpers/extensions.dart';
+import '../../core/reouting/routes.dart';
+import '../../core/theming/app_colors.dart';
+import '../../core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class GetStartedButton extends StatelessWidget {
@@ -20,7 +20,7 @@ class GetStartedButton extends StatelessWidget {
       ),
       child: Text('Get Started', style: TextStyles.font16WhiteMedium),
       onPressed: () {
-        context.pushNamed(Routes.loginScreen);
+        context.pushReplacementNamed(Routes.loginScreen);
       },
     );
   }
