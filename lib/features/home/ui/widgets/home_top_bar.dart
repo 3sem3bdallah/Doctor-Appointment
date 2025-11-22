@@ -19,15 +19,13 @@ class HomeTopBar extends StatelessWidget {
           ],
         ),
         const Spacer(),
-        InkWell(
-          child: CircleAvatar(
-            radius: 24,
-            backgroundColor: AppColors.lighterGray,
-            child: SvgPicture.asset("assets/svg/notifications.svg"),
+        CircleAvatar(
+          radius: 24,
+          backgroundColor: AppColors.lighterGray,
+          child: IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset("assets/svg/notifications.svg"),
           ),
-          onTap: () {
-            // TODO: initialized notifications screens.
-          },
         ),
       ],
     );
