@@ -1,13 +1,14 @@
-import 'package:adv_app/core/di/dependency_injection.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/features/home/ui/home_screen.dart';
-import 'package:adv_app/features/login/logic/cubit/login_cubit.dart';
-import 'package:adv_app/features/login/ui/login_screen.dart';
-import 'package:adv_app/features/onboarding/onboarding_screen.dart';
-import 'package:adv_app/features/signup/logic/sign_up_cubit.dart';
-import 'package:adv_app/features/signup/ui/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../features/home/ui/home_screen.dart';
+import '../../features/login/logic/cubit/login_cubit.dart';
+import '../../features/login/ui/login_screen.dart';
+import '../../features/onboarding/onboarding_screen.dart';
+import '../../features/signup/logic/sign_up_cubit.dart';
+import '../../features/signup/ui/sign_up_screen.dart';
+import '../di/dependency_injection.dart';
+import 'routes.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -35,7 +36,12 @@ class AppRouter {
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
-            body: Center(child: Text('No route defined for ${settings.name}')),
+            body: Center(
+              child: Text(
+                'No route defined for ${settings.name}\nplease exit app',
+                textAlign: TextAlign.center,
+              ),
+            ),
           ),
         );
     }

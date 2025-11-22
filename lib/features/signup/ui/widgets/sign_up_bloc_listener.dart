@@ -1,11 +1,12 @@
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
-import 'package:adv_app/features/signup/logic/sign_up_cubit.dart';
-import 'package:adv_app/features/signup/logic/sign_up_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/reouting/routes.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/theming/text_styles.dart';
+import '../../logic/sign_up_cubit.dart';
+import '../../logic/sign_up_state.dart';
 
 class SignupBlocListener extends StatelessWidget {
   const SignupBlocListener({super.key});

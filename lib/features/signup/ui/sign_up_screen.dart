@@ -1,14 +1,15 @@
-import 'package:adv_app/core/helpers/spacing.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
-import 'package:adv_app/core/widgets/app_text_button.dart';
-import 'package:adv_app/features/login/ui/widgets/terms_and_condition_widget.dart';
-import 'package:adv_app/features/signup/logic/sign_up_cubit.dart';
-import 'package:adv_app/features/signup/ui/widgets/sign_up_bloc_listener.dart';
-import 'package:adv_app/features/signup/ui/widgets/already_have_account.dart';
-import 'package:adv_app/features/signup/ui/widgets/sign_up_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../core/helpers/spacing.dart';
+import '../../../core/theming/text_styles.dart';
+import '../../../core/widgets/app_text_button.dart';
+import '../../login/ui/widgets/terms_and_condition_widget.dart';
+import '../logic/sign_up_cubit.dart';
+import 'widgets/already_have_account.dart';
+import 'widgets/sign_up_bloc_listener.dart';
+import 'widgets/sign_up_form.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -23,14 +24,11 @@ class SignupScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Create Account',
-                  style: TextStyles.font24BlueBold,
-                ),
+                Text('Create Account', style: TextStyles.font24BlueBold),
                 verticalSpace(8),
                 Text(
                   'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
-                  style: TextStyles.font14GreyRegular,
+                  style: TextStyles.font14GrayRegular,
                 ),
                 verticalSpace(36),
                 Column(

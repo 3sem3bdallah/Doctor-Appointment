@@ -1,9 +1,10 @@
-import 'package:adv_app/core/networking/api_result.dart';
-import 'package:adv_app/features/login/data/model/login_request_body.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:adv_app/features/login/data/repo/login_repo.dart';
-import 'package:adv_app/features/login/logic/cubit/login_state.dart';
+
+import '../../../../core/networking/api_result.dart';
+import '../../data/model/login_request_body.dart';
+import '../../data/repo/login_repo.dart';
+import 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   final LoginRepo _loginRepo;
