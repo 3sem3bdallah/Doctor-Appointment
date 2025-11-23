@@ -17,18 +17,18 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           width: double.infinity,
           margin: EdgeInsets.symmetric(horizontal: 20),
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                const HomeTopBar(),
-                const DoctorsBlueContainers(),
-                verticalSpace(24),
-                const DoctorSpeciality(),
-                verticalSpace(10),
-                const SpecializationsAndDoctorsBlocBuilder(),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const HomeTopBar(),
+              const DoctorsBlueContainers(),
+              verticalSpace(24),
+              const DoctorSpeciality(),
+              verticalSpace(10),
+              Expanded( // to handel Flutter layout bug
+                child: const SpecializationsAndDoctorsBlocBuilder(),
+              ),
+            ],
           ),
         ),
       ),
