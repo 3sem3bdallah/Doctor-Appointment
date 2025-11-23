@@ -10,7 +10,7 @@ platform :android do
       firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
       android_artifact_type: "APK",
       android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
-      testers: "asem5141@gmail.com,sico1199.as@gmail.com,abdulhamidiskander@gmail.com,bdhjmal326@gmail.com",
+      testers: "asem5141@gmail.com,sico1199.as@gmail.com,ebrahimhasn1234@gmail.com,abdulhamidiskander@gmail.com,bdhjmal326@gmail.com,mohamedegohary4@gmail.com,ammaryassermekawy@gmail.com",
       release_notes: "release uploaded via Fastlane 🚀"
     )
   end
