@@ -1,3 +1,4 @@
+import 'package:adv_app/core/helpers/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,7 +22,7 @@ class DocApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onBoardingScreen,
+        initialRoute: isLoggedInUser? Routes.homeScreen : Routes.onBoardingScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
