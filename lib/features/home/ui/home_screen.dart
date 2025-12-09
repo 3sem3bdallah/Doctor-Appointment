@@ -1,5 +1,6 @@
-import 'widgets/specializations_and_doctors_bloc_builder.dart';
-import 'widgets/doctor_speciality.dart';
+import 'package:adv_app/features/home/ui/widgets/doctors_speciality_see_all.dart';
+import 'package:adv_app/features/home/ui/widgets/doctors_list/doctors_bloc_builder.dart';
+import 'package:adv_app/features/home/ui/widgets/specializations_list/specializations_bloc_builder.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/helpers/spacing.dart';
@@ -23,11 +24,11 @@ class HomeScreen extends StatelessWidget {
               const HomeTopBar(),
               const DoctorsBlueContainers(),
               verticalSpace(24),
-              const DoctorSpeciality(),
-              verticalSpace(10),
-              Expanded( // to handel Flutter layout bug
-                child: const SpecializationsAndDoctorsBlocBuilder(),
-              ),
+              const DoctorSpecialitySeeAll(),
+              verticalSpace(18),
+              const SpecializationsBlocBuilder(),
+              verticalSpace(8),
+              const DoctorsBlocBuilder(),
             ],
           ),
         ),

@@ -1,5 +1,5 @@
 import 'doctors_list_view_item.dart';
-import '../../data/models/specialization_response_model.dart';
+import '../../../data/models/specialization_response_model.dart';
 
 import 'package:flutter/material.dart';
 
