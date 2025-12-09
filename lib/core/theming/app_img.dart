@@ -7,7 +7,7 @@ class AppImg {
   static const String doc = 'assets/images/doc.png';
   static const String docx = 'assets/images/docx.png';
   static const String bluePattern = 'assets/images/home_blue_pattern.png';
-  static const String onboarding = 'assets/images/onboarding.png';
+  static const String onboarding = 'assets/images/onboarding_doctor.png';
 
   // svg-icon
   static const String docdocLogo = 'assets/svg/docdoc_logo.svg';
