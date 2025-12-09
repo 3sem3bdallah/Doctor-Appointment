@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/theming/app_colors.dart';
+import '../../../../core/theming/app_img.dart';
 import '../../../../core/theming/text_styles.dart';
 
 class HomeTopBar extends StatelessWidget {
@@ -24,7 +25,7 @@ class HomeTopBar extends StatelessWidget {
           backgroundColor: AppColors.lighterGray,
           child: IconButton(
             onPressed: () {},
-            icon: SvgPicture.asset("assets/svg/notifications.svg"),
+            icon: SvgPicture.asset(AppImg.notifications),
           ),
         ),
       ],

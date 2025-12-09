@@ -34,21 +34,21 @@ class SpecialityListViewItem extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 28,
                     backgroundColor: AppColors.moreLightGrey,
-                    // child: SvgPicture.asset(
-                    //   AppImg.generalSpeciality,
-                    //   height: 42.h,
-                    //   width: 42.w,
-                    // ),
+                    child: SvgPicture.asset(
+                      AppImg.generalSpeciality,
+                      height: 42.h,
+                      width: 42.w,
+                    ),
                   ),
                 )
               : CircleAvatar(
                   radius: 28,
                   backgroundColor: AppColors.moreLightGrey,
-                  // child: SvgPicture.asset(
-                  //  AppImg.generalSpeciality,
-                  //   height: 40.h,
-                  //   width: 40.w,
-                  // ),
+                  child: SvgPicture.asset(
+                   AppImg.generalSpeciality,
+                    height: 40.h,
+                    width: 40.w,
+                  ),
                 ),
           verticalSpace(8),
           Text(

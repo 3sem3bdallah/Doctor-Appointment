@@ -1,3 +1,4 @@
+import 'package:adv_app/core/theming/app_img.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,7 +26,7 @@ class SplashAnimatedLogo extends StatelessWidget {
         child: Opacity(
           opacity: opacity.value,
           child: Image.asset(
-            'assets/images/logo.png',
+            AppImg.logo,
             width: 80.w,
             height: 80.h,
             fit: BoxFit.contain,

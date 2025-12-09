@@ -1,3 +1,5 @@
+import 'package:adv_app/core/theming/app_img.dart';
+
 import '../../../../core/helpers/spacing.dart';
 import '../../../../core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +22,7 @@ class DoctorsBlueContainers extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
               image: const DecorationImage(
-                image: AssetImage('assets/images/home_blue_pattern.png'),
+                image: AssetImage(AppImg.bluePattern),
                 fit: BoxFit.cover,
               ),
             ),
@@ -54,7 +56,7 @@ class DoctorsBlueContainers extends StatelessWidget {
           Positioned(
             right: 12.w,
             top: 0,
-            child: Image.asset('assets/images/doc.png', height: 206.h),
+            child: Image.asset(AppImg.doc, height: 206.h),
           ),
         ],
       ),

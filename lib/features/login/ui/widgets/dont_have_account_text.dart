@@ -1,5 +1,3 @@
-// import 'package:adv_app/core/helpers/extensions.dart';
-// import 'package:adv_app/core/reouting/routes.dart';
 import 'package:adv_app/core/helpers/extensions.dart';
 import 'package:adv_app/core/reouting/routes.dart';
 import 'package:adv_app/core/theming/text_styles.dart';

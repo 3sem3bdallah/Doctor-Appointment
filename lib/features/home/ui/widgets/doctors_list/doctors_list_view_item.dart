@@ -1,3 +1,5 @@
+import 'package:adv_app/core/theming/app_img.dart';
+
 import '../../../../../core/helpers/spacing.dart';
 import '../../../../../core/theming/text_styles.dart';
 import '../../../data/models/specialization_response_model.dart';
@@ -17,7 +19,7 @@ class DoctorsListViewItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(12.0),
             child: Image.asset(
-              "assets/images/docx.png",
+              AppImg.docx,
               width: 100.w,
               height: 100.h,
               fit: BoxFit.cover,
