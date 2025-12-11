@@ -1,4 +1,4 @@
-import 'package:adv_app/core/helpers/constant.dart';
+import 'core/helpers/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

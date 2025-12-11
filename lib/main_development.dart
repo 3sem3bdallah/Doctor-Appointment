@@ -1,10 +1,10 @@
-import 'package:adv_app/core/helpers/constant.dart';
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/helpers/shared_pref.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/di/dependency_injection.dart';
+import 'core/helpers/constant.dart';
+import 'core/helpers/extensions.dart';
+import 'core/helpers/shared_pref.dart';
 import 'core/reouting/app_router.dart';
 import 'doc_app.dart';
 

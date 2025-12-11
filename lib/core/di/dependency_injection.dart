@@ -1,8 +1,8 @@
-import '../../features/home/data/api/home_api_service.dart';
-import '../../features/home/data/repo/home_repo.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../features/home/data/api/home_api_service.dart';
+import '../../features/home/data/repo/home_repo.dart';
 import '../../features/login/data/repo/login_repo.dart';
 import '../../features/login/logic/cubit/login_cubit.dart';
 import '../../features/signup/data/repo/sign_up_repo.dart';

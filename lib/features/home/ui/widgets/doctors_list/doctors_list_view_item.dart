@@ -1,4 +1,4 @@
-import 'package:adv_app/core/theming/app_img.dart';
+import '../../../../../core/theming/app_img.dart';
 
 import '../../../../../core/helpers/spacing.dart';
 import '../../../../../core/theming/text_styles.dart';
