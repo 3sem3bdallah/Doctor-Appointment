@@ -1,7 +1,8 @@
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../theming/app_colors.dart';
+import '../theming/text_styles.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
@@ -36,17 +37,20 @@ class AppTextFormField extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         isDense: true,
-        contentPadding: contentPadding ??
+        contentPadding:
+            contentPadding ??
             EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
-        focusedBorder: focusedBorder ??
+        focusedBorder:
+            focusedBorder ??
             OutlineInputBorder(
               borderSide: const BorderSide(
-                color: AppColors.mainBlue,
+                color: AppColors.lightBlue,
                 width: 1.3,
               ),
               borderRadius: BorderRadius.circular(16.0),
             ),
-        enabledBorder: enabledBorder ??
+        enabledBorder:
+            enabledBorder ??
             OutlineInputBorder(
               borderSide: const BorderSide(
                 color: AppColors.lighterGray,
@@ -55,17 +59,11 @@ class AppTextFormField extends StatelessWidget {
               borderRadius: BorderRadius.circular(16.0),
             ),
         errorBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Colors.red,
-            width: 1.3,
-          ),
+          borderSide: const BorderSide(color: Colors.red, width: 1.3),
           borderRadius: BorderRadius.circular(16.0),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: const BorderSide(
-            color: Colors.red,
-            width: 1.3,
-          ),
+          borderSide: const BorderSide(color: Colors.red, width: 1.3),
           borderRadius: BorderRadius.circular(16.0),
         ),
         hintStyle: hintStyle ?? TextStyles.font14LightGreyRegular,

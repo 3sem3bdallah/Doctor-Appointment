@@ -1,8 +1,10 @@
-import 'package:adv_app/core/reouting/app_router.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/app_colors.dart';
+import 'core/helpers/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'core/reouting/app_router.dart';
+import 'core/reouting/routes.dart';
+import 'core/theming/app_colors.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -16,11 +18,11 @@ class DocApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Doc App',
         theme: ThemeData(
-          primaryColor: AppColors.mainBlue,
+          primaryColor: AppColors.lightBlue,
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onBoardingScreen,
+        initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.onBoardingScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

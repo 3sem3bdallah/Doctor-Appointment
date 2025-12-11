@@ -1,8 +1,8 @@
-import 'package:adv_app/core/networking/api_error_handler.dart';
-import 'package:adv_app/core/networking/api_result.dart';
-import 'package:adv_app/core/networking/api_service.dart';
-import 'package:adv_app/features/login/data/model/login_request_body.dart';
-import 'package:adv_app/features/login/data/model/login_response.dart';
+import '../../../../core/networking/api_error_handler.dart';
+import '../../../../core/networking/api_result.dart';
+import '../../../../core/networking/api_service.dart';
+import '../model/login_request_body.dart';
+import '../model/login_response.dart';
 
 class LoginRepo {
   final ApiService _apiService;
@@ -16,7 +16,7 @@ class LoginRepo {
       final response = await _apiService.login(loginRequestBody);
       return ApiResult.success(response);
     } catch (error) {
-      return ApiResult.failure(ErrorHandler.handle(error));
+      return ApiResult.failure(ApiErrorHandler.handle(error));
     }
   }
 }

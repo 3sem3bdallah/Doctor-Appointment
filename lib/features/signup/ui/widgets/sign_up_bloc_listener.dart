@@ -1,11 +1,13 @@
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
-import 'package:adv_app/features/signup/logic/sign_up_cubit.dart';
-import 'package:adv_app/features/signup/logic/sign_up_state.dart';
+import '../../../../core/networking/api_error_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/reouting/routes.dart';
+import '../../../../core/theming/app_colors.dart';
+import '../../../../core/theming/text_styles.dart';
+import '../../logic/sign_up_cubit.dart';
+import '../../logic/sign_up_state.dart';
 
 class SignupBlocListener extends StatelessWidget {
   const SignupBlocListener({super.key});
@@ -24,7 +26,7 @@ class SignupBlocListener extends StatelessWidget {
               context: context,
               builder: (context) => const Center(
                 child: CircularProgressIndicator(
-                  color: AppColors.mainBlue,
+                  color: AppColors.lightBlue,
                 ),
               ),
             );
@@ -33,8 +35,8 @@ class SignupBlocListener extends StatelessWidget {
             context.pop();
             showSuccessDialog(context);
           },
-          signupError: (error) {
-            setupErrorState(context, error);
+          signupError: (apiErrorModel) {
+            setupErrorState(context, apiErrorModel);
           },
         );
       },
@@ -58,7 +60,10 @@ class SignupBlocListener extends StatelessWidget {
           actions: <Widget>[
             TextButton(
               style: TextButton.styleFrom(
-                foregroundColor: Colors.white, backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue,
+                // ignore: deprecated_member_use
+                disabledForegroundColor: Colors.grey.withOpacity(0.38),
               ),
               onPressed: () {
                 context.pushNamed(Routes.loginScreen);
@@ -71,7 +76,7 @@ class SignupBlocListener extends StatelessWidget {
     );
   }
 
-  void setupErrorState(BuildContext context, String error) {
+  void setupErrorState(BuildContext context, ApiErrorModel apiErrorModel) {
     context.pop();
     showDialog(
       context: context,
@@ -82,7 +87,7 @@ class SignupBlocListener extends StatelessWidget {
           size: 32,
         ),
         content: Text(
-          error,
+          apiErrorModel.getAllErrorMessages(),
           style: TextStyles.font15DarkBlueMedium,
         ),
         actions: [

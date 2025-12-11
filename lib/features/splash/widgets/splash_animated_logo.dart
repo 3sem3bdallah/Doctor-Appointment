@@ -1,0 +1,38 @@
+import '../../../core/theming/app_img.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class SplashAnimatedLogo extends StatelessWidget {
+  final Animation<double> scale;
+  final Animation<double> opacity;
+
+  const SplashAnimatedLogo({
+    super.key,
+    required this.scale,
+    required this.opacity,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Transform.scale(
+      scale: scale.value,
+      child: Container(
+        width: 200.w,
+        height: 200.h,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Color(0xFF8BB4F3),
+        ),
+        child: Opacity(
+          opacity: opacity.value,
+          child: Image.asset(
+            AppImg.logo,
+            width: 80.w,
+            height: 80.h,
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
+    );
+  }
+}
