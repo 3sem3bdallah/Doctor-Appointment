@@ -1,6 +1,6 @@
-import 'package:adv_app/core/helpers/extensions.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
+import '../../../../core/helpers/extensions.dart';
+import '../../../../core/reouting/routes.dart';
+import '../../../../core/theming/text_styles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 

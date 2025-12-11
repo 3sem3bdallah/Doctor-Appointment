@@ -1,4 +1,4 @@
-import 'package:adv_app/features/splash/splash_screen.dart';
+import '../../features/splash/splash_screen.dart';
 
 import '../../features/home/logic/cubit/home_cubit.dart';
 import 'package:flutter/material.dart';

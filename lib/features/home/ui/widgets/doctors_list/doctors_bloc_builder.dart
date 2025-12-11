@@ -1,8 +1,9 @@
-import 'package:adv_app/features/home/logic/cubit/home_cubit.dart';
-import 'package:adv_app/features/home/logic/cubit/home_state.dart';
-import 'package:adv_app/features/home/ui/widgets/doctors_list/doctors_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../logic/cubit/home_cubit.dart';
+import '../../../logic/cubit/home_state.dart';
+import 'doctors_list_view.dart';
 
 class DoctorsBlocBuilder extends StatelessWidget {
   const DoctorsBlocBuilder({super.key});
@@ -17,7 +18,7 @@ class DoctorsBlocBuilder extends StatelessWidget {
           doctorsSuccess: (doctorsList) {
             return setupSuccess(doctorsList);
           },
-          doctorsError: (errorHandler) => setupError(),
+          doctorsError: () => setupError(),
           orElse: () {
             return const SizedBox.shrink();
           },

@@ -1,12 +1,12 @@
-import 'package:adv_app/core/theming/app_colors.dart';
-import 'package:adv_app/core/theming/app_img.dart';
-import 'package:adv_app/core/theming/text_styles.dart';
-import 'package:adv_app/features/home/data/models/specialization_response_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/helpers/spacing.dart';
+import '../../../../../core/theming/app_colors.dart';
+import '../../../../../core/theming/app_img.dart';
+import '../../../../../core/theming/text_styles.dart';
+import '../../../data/models/specialization_response_model.dart';
 
 class SpecialityListViewItem extends StatelessWidget {
   final SpecializationsData? specializationsData;

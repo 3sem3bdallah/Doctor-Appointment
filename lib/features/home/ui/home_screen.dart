@@ -1,6 +1,6 @@
-import 'package:adv_app/features/home/ui/widgets/doctors_speciality_see_all.dart';
-import 'package:adv_app/features/home/ui/widgets/doctors_list/doctors_bloc_builder.dart';
-import 'package:adv_app/features/home/ui/widgets/specializations_list/specializations_bloc_builder.dart';
+import 'widgets/doctors_speciality_see_all.dart';
+import 'widgets/doctors_list/doctors_bloc_builder.dart';
+import 'widgets/specializations_list/specializations_bloc_builder.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/helpers/spacing.dart';

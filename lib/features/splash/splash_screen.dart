@@ -1,6 +1,6 @@
-import 'package:adv_app/core/helpers/constant.dart';
-import 'package:adv_app/core/reouting/routes.dart';
-import 'package:adv_app/features/splash/widgets/splash_animated_logo.dart';
+import '../../core/helpers/constant.dart';
+import '../../core/reouting/routes.dart';
+import 'widgets/splash_animated_logo.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

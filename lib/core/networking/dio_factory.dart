@@ -1,5 +1,5 @@
-import 'package:adv_app/core/helpers/constant.dart';
-import 'package:adv_app/core/helpers/shared_pref.dart';
+import '../helpers/constant.dart';
+import '../helpers/shared_pref.dart';
 import 'package:dio/dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
